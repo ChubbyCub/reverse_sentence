@@ -12,12 +12,13 @@ def reverse_sentence(my_sentence)
   low = 0
   high = 0
   while high < my_sentence.length
-    if my_sentence[low] == ' '
+    if my_sentence[low] == " "
       low += 1
       high = low
+      next
     end
 
-    while high < my_sentence.length && my_sentence[high] != ' '
+    while high < my_sentence.length && my_sentence[high] != " "
       high += 1
     end
 
